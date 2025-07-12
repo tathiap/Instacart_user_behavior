@@ -1,10 +1,44 @@
-# Exploring Shopping Habits: A Data Analysis on Instacart Customer Behavior
+# Instacart User Behavior & Reorder Prediction Analysis
+This repository includes two complementary projects based on the Instacart Online Grocery Shopping Dataset 2017. These projects aim to explore user behavior and predict product reordering patterns to support data-driven decision-making for e-commerce platforms.
 
-###### Dataset Description: 
-The dataset in question is related to Instacart and was initially released for a Kaggle competition in 2017. While the original dataset is no longer available on the Instacart website, modified CSV files have been created for the project. These files contain a reduced version of the original dataset, with changes made to enhance computational efficiency, such as size reduction and the introduction of missing and duplicate values. The modifications aimed to maintain the original data's distributions.
+## Project 1: Exploratory Data Analysis (EDA)
 
-###### Project Objective: 
-The main objective of the project is to clean up the provided data and generate a report that offers insights into the shopping habits of Instacart customers. The analysis is expected to involve answering specific questions, and for each question, the results should be presented in a Jupyter notebook with accompanying plots. The plots are required to have proper titles, labeled axes, legends if necessary, and each plot cell should end with plt.show().
+### Goal: 
+This project focuses on analyzing key behavioral trends in Instacart’s user base through exploratory data analysis (EDA). By investigating when customers shop, how frequently they reorder, and which products they favor, we aim to uncover actionable insights that can inform future modeling efforts such as A/B testing, forecasting, and user segmentation.
 
-###### Tasks Involved: 
-The tasks include cleaning up the data, conducting analyses, and creating visualizations to communicate the findings effectively. The report should be structured in a Jupyter notebook, with explanations provided in markdown cells after answering each question.
+### Key Insights:
+
+* Time-Based Ordering: Most users order between 9AM and 6PM, especially mid-week and on weekends.
+* Customer Frequency: Majority of users place only 1–2 orders; fewer users show consistent shopping behavior.
+* Product Trends: Staples like bananas, avocados, and organic produce dominate both first-time and repeat purchases.
+* Reorder Patterns: Certain niche products have perfect reorder rates, suggesting strong product loyalty.
+
+### Output: 
+instacart_eda.ipynb — an interactive notebook with charts, histograms, and summary commentary.
+
+## Project 2: Predictive Modeling & Forecasting
+
+### Goal: 
+Building on the EDA findings, this project adds statistical testing, machine learning, and time-series modeling to simulate real-world decision-making strategies. This includes testing hypotheses, forecasting demand, and predicting whether a product will be reordered.
+
+### Modules:
+* A/B Testing: Simulates two user groups to test impact on reorder behavior. Results show no significant difference (p > 0.05).
+* Forecasting: Uses Facebook Prophet to predict daily order volume, identifying temporal trends to support operations.
+* Classification Model: Implements logistic regression to predict reorder likelihood with a ROC-AUC score of 0.58.
+
+### Output:
+* instacart_analysis.py — a Python script version for data pipelines
+* instacart_modeling.ipynb (optional) — notebook version with visual explanations
+
+## Dataset Overview
+The Instacart dataset includes:
+
+* orders.csv: Order-level details (user ID, order timing, etc.)
+* products.csv, departments.csv, aisles.csv: Product catalog
+* order_products.csv: Product-level data per order
+
+## Tech Stack
+* Data Analysis: pandas, numpy, matplotlib, seaborn
+* Statistical Testing: scipy
+* Forecasting: prophet
+* Modeling: scikit-learn, statsmodels
