@@ -1,44 +1,38 @@
-# Instacart User Behavior & Reorder Prediction Analysis
-This repository includes two complementary projects based on the Instacart Online Grocery Shopping Dataset 2017. These projects aim to explore user behavior and predict product reordering patterns to support data-driven decision-making for e-commerce platforms.
+# Instacart Customer Behavior Analysis
+Customer purchase behavior analysis using the Instacart Online Grocery Dataset (public dataset from Kaggle).
+This project explores segmentation, re-ordering behavior, and the impact of targeted interventions through A/B testing and uplift modeling. Forecasting methods are also applied to project customer demand and reorder activity.
 
-## Project 1: Exploratory Data Analysis (EDA)
 
-### Goal: 
-This project focuses on analyzing key behavioral trends in Instacart’s user base through exploratory data analysis (EDA). By investigating when customers shop, how frequently they reorder, and which products they favor, we aim to uncover actionable insights that can inform future modeling efforts such as A/B testing, forecasting, and user segmentation.
+## Project Overview
+Instacart provides a large dataset of grocery orders. This analysis addresses:
 
-### Key Insights:
+  * Customer Segmentation – clustering users into actionable groups based on order habits.
+  * A/B Testing & Causal Inference – measuring the impact of interventions using propensity score matching (PSM) and uplift modeling.
+  * Forecasting & Time Series – predicting reorder volumes using ARIMA/Prophet.
+  * SQL Analysis – querying the dataset (via notebooks).
+  * Feature Engineering & Modeling – building features such as reorder ratio, aisle/department preferences, and time-based purchase patterns.
 
-* Time-Based Ordering: Most users order between 9AM and 6PM, especially mid-week and on weekends.
-* Customer Frequency: Majority of users place only 1–2 orders; fewer users show consistent shopping behavior.
-* Product Trends: Staples like bananas, avocados, and organic produce dominate both first-time and repeat purchases.
-* Reorder Patterns: Certain niche products have perfect reorder rates, suggesting strong product loyalty.
+## Tools & Tech
 
-### Output: 
-instacart_eda.ipynb — an interactive notebook with charts, histograms, and summary commentary.
+* Languages: Python, SQL
+* Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, statsmodels, causalml, Prophet
+* Environment: Jupyter Notebooks (Local Jupyter)
+* Visualization: Matplotlib & Seaborn
 
-## Project 2: Predictive Modeling & Forecasting
+## Dataset Access
+The dataset is stored on Google Drive: https://drive.google.com/drive/folders/1hWo1zIMyihISacroshPO1KplkK3quxP9?usp=drive_link
 
-### Goal: 
-Building on the EDA findings, this project adds statistical testing, machine learning, and time-series modeling to simulate real-world decision-making strategies. This includes testing hypotheses, forecasting demand, and predicting whether a product will be reordered.
+*Note: Data is too large to be stored in this repository. Please download directly from the link above to reproduce results.*
 
-### Modules:
-* A/B Testing: Simulates two user groups to test impact on reorder behavior. Results show no significant difference (p > 0.05).
-* Forecasting: Uses Facebook Prophet to predict daily order volume, identifying temporal trends to support operations.
-* Classification Model: Implements logistic regression to predict reorder likelihood with a ROC-AUC score of 0.58.
+## Key Insight 
 
-### Output:
-* instacart_analysis.py — a Python script version for data pipelines
-* instacart_modeling.ipynb (optional) — notebook version with visual explanations
+  * Segmentation – Customers cluster into groups (e.g., heavy re-orderers, new shoppers, aisle specialists), enabling targeted marketing.
+  * A/B Testing (PSM + Uplift) – Treatment groups showed a ~0.7% uplift in reorders, validating targeted promotional strategies.
+  * Forecasting – Prophet & ARIMA models captured weekly reorder seasonality, useful for staffing and inventory planning.
+  * SQL Analysis – streamlined large scale joins across millions of records for aisles, departments, and user behavior features.
 
-## Dataset Overview
-The Instacart dataset includes:
+## Future Improvements
 
-* orders.csv: Order-level details (user ID, order timing, etc.)
-* products.csv, departments.csv, aisles.csv: Product catalog
-* order_products.csv: Product-level data per order
-
-## Tech Stack
-* Data Analysis: pandas, numpy, matplotlib, seaborn
-* Statistical Testing: scipy
-* Forecasting: prophet
-* Modeling: scikit-learn, statsmodels
+  * Build a dashboard (Tableau/Power BI) for real time segment tracking.
+  * Expand causal inference with Bayesian A/B testing.
+  * Incorporate deep learning models (LSTM) for demand forecasting.
