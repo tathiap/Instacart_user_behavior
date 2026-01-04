@@ -201,11 +201,11 @@ Focus: Predict weekly demand to support capacity planning and inventory manageme
 
 **WFM Connection:** Identical forecasting methods predict:
 
- * *Call volume forecasting:**  ARIMA for weekly call patterns
+ * *Call volume forecasting:*  ARIMA for weekly call patterns
    
- * *Attrition forecasting:**  Prophet for seasonal turnover trends
+ * *Attrition forecasting:*  Prophet for seasonal turnover trends
    
- * *Capacity planning:**  Staffing models based on predicted service volume
+ * *Capacity planning:*  Staffing models based on predicted service volume
 
 **Key transferable skill:**  Time series decomposition and forecasting with proper train/test discipline.
 
