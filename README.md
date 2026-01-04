@@ -159,15 +159,15 @@ Focus: User retention through order progression (SQL-based behavioral analytics)
 Focus: Predict weekly demand to support capacity planning and inventory management
 
 **Models Evaluated:**
-  * *Baselines:**  Naive, Seasonal-Naive, Moving Average (4-week)
+  * *Baselines:* Naive, Seasonal-Naive, Moving Average (4-week)
   
-  * *Advanced:**  Prophet (Facebook's forecasting library), SARIMA (Seasonal ARIMA)
+  * *Advanced:* Prophet (Facebook's forecasting library), SARIMA (Seasonal ARIMA)
 
 **Methodology:**
 
-  * *Proper temporal splits:**  Train (70%) / Validation (15%) / Test (15%)
+  * *Proper temporal splits:*  Train (70%) / Validation (15%) / Test (15%)
 
-  * *Multiple metrics:**  MAE, RMSE, MAPE, sMAPE, MASE
+  * *Multiple metrics:*  MAE, RMSE, MAPE, sMAPE, MASE
 
   * Rolling backtest for stability assessment
    
