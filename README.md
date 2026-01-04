@@ -5,11 +5,11 @@ Production scale behavioral analytics demonstrating workforce adjacent capabilit
 ## Why This Matters for Workforce Management
 This project demonstrates analytical capabilities directly applicable to workforce planning and operational analytics:
 
- *** 1. Retention & Attrition Forecasting ***
+ * 1. Retention & Attrition Forecasting *
  
- ** Workforce Parallel:**  Just as customers churn, employees attrit—forecasting methods apply to both domains.
+ * Workforce Parallel:*  Just as customers churn, employees attrit—forecasting methods apply to both domains.
  
- ** What I Did: ** 
+ * What I Did: *
    * Built retention funnels tracking user progression through order milestones (1→2→3→6+ orders)
      
    * Identified Week 1 as critical retention window (35% drop-off after first order)
