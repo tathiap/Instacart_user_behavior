@@ -63,7 +63,7 @@ This project demonstrates analytical capabilities directly applicable to workfor
   
 * Segment-level analysis shows which employee groups benefit most from interventions
 
-4. SQL-Based Operational Analytics at Scale
+### 4. SQL-Based Operational Analytics at Scale
 **Workforce Parallel:** Monitor workforce KPIs in real time for operational decision-making.
 
 **What I Did:**
@@ -89,11 +89,11 @@ Focus: Temporal patterns, engagement metrics, and product loyalty
 
 **Key Findings:**
 
-* **Peak order times:** 10am-3pm on Sundays
+* **Peak order times:**  10am-3pm on Sundays
 
-* **Reorder cadences:** 7 day and 30 day peaks suggest natural reminder windows
+* **Reorder cadences:**  7 day and 30 day peaks suggest natural reminder windows
   
-* **Top products:** Bananas, organic strawberries, organic avocados (high reorder rates)
+* **Top products:**  Bananas, organic strawberries, organic avocados (high reorder rates)
 
 **Methods:**
 
