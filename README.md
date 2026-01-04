@@ -117,17 +117,13 @@ Focus: Temporal patterns, engagement metrics, and product loyalty
 ### 02_Funnel_Overall.sql & 03_Funnel_Weekly.sql
 Focus: User retention through order progression (SQL-based behavioral analytics)
 
-    **Overall Funnel:**  100% users → 65% place 2+ orders → 42% place 3+ orders → 14% place 6+ orders
-    **Weekly Retention:**
-       * Week 0: 100% (baseline)
-   
-       * Week 1: 67% return (first critical milestone)
-   
-       * Weeks 2-3: 41% remain (loyalty forming)
-   
-       * Weeks 4-7: 19% active (long-term customers emerging)
-   
-       * 8+ weeks: 6% (high-value core)
+    Overall Funnel: 100% users → 65% place 2+ orders → 42% place 3+ orders → 14% place 6+ orders
+    Weekly Retention:
+       Week 0: 100% (baseline)
+       Week 1: 67% return (first critical milestone)
+       Weeks 2-3: 41% remain (loyalty forming)
+       Weeks 4-7: 19% active (long-term customers emerging)
+       8+ weeks: 6% (high-value core)
        
 **Key Insight:** Largest drop-off occurs immediately after first order. Users who return within Week 1 are significantly more likely to become long-term customers.
 
