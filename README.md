@@ -159,15 +159,15 @@ Focus: User retention through order progression (SQL-based behavioral analytics)
 Focus: Predict weekly demand to support capacity planning and inventory management
 
 **Models Evaluated:**
-  * *Baselines:** Naive, Seasonal-Naive, Moving Average (4-week)
+  * *Baselines:**  Naive, Seasonal-Naive, Moving Average (4-week)
   
-  * *Advanced:** Prophet (Facebook's forecasting library), SARIMA (Seasonal ARIMA)
+  * *Advanced:**  Prophet (Facebook's forecasting library), SARIMA (Seasonal ARIMA)
 
 **Methodology:**
 
-  * *Proper temporal splits:** Train (70%) / Validation (15%) / Test (15%)
+  * *Proper temporal splits:**  Train (70%) / Validation (15%) / Test (15%)
 
-  * *Multiple metrics:** MAE, RMSE, MAPE, sMAPE, MASE
+  * *Multiple metrics:**  MAE, RMSE, MAPE, sMAPE, MASE
 
   * Rolling backtest for stability assessment
    
@@ -201,13 +201,13 @@ Focus: Predict weekly demand to support capacity planning and inventory manageme
 
 **WFM Connection:** Identical forecasting methods predict:
 
- * *Call volume forecasting:** ARIMA for weekly call patterns
+ * *Call volume forecasting:**  ARIMA for weekly call patterns
    
- * *Attrition forecasting:** Prophet for seasonal turnover trends
+ * *Attrition forecasting:**  Prophet for seasonal turnover trends
    
- * *Capacity planning:** Staffing models based on predicted service volume
+ * *Capacity planning:**  Staffing models based on predicted service volume
 
-**Key transferable skill:** Time series decomposition and forecasting with proper train/test discipline.
+**Key transferable skill:**  Time series decomposition and forecasting with proper train/test discipline.
 
 
 ### 05_AB_Testing_PSM_Uplift.ipynb
@@ -215,13 +215,13 @@ Focus: Measure causal impact of interventions using advanced statistical methods
 
 **Methods:**
 
- * **Propensity Score Matching (PSM):** Balance treatment/control groups on observables
+ * **Propensity Score Matching (PSM):**  Balance treatment/control groups on observables
 
- * **Inverse Probability Weighting (IPW):** Adjust for selection bias
+ * **Inverse Probability Weighting (IPW):**  Adjust for selection bias
    
- * **Nearest-Neighbor Matching:** 1:1 matching with caliper for robustnes
+ * **Nearest-Neighbor Matching:**  1:1 matching with caliper for robustnes
    
- * **Uplift Modeling:** Estimate treatment effect heterogeneity across segments
+ * **Uplift Modeling:**  Estimate treatment effect heterogeneity across segments
 
 **Experimental Design:**
 
@@ -243,11 +243,11 @@ Focus: Measure causal impact of interventions using advanced statistical methods
 
 **Results:**
 
- * **Overall ATE:** +0.7% improvement in reorder probability (p < 0.05)
+ * **Overall ATE:**  +0.7% improvement in reorder probability (p < 0.05)
    
- * **By-segment uplift:** High engagement customers showed 1.2% lift; low engagement 0.3%
+ * **By-segment uplift:**  High engagement customers showed 1.2% lift; low engagement 0.3%
    
- * **IPW vs Matching agreement:** Both methods yielded consistent estimates (validates robustness)
+ * **IPW vs Matching agreement:**  Both methods yielded consistent estimates (validates robustness)
 
 **Business Value:**
 
@@ -259,10 +259,13 @@ Focus: Measure causal impact of interventions using advanced statistical methods
 
 **WFM Connection:** Same causal inference framework tests workforce interventions:
 
- * **Retention bonuses:** Do they reduce attrition? For which employee segments?
- * **Training programs:** Measure impact on productivity or retention
- * **Schedule flexibility:** Test whether flexible schedules improve retention/performance
- * **Onboarding enhancements:** A/B test different onboarding approaches
+ * **Retention bonuses:**  Do they reduce attrition? For which employee segments?
+
+ * **Training programs:**  Measure impact on productivity or retention
+   
+ * **Schedule flexibility:**  Test whether flexible schedules improve retention/performance
+   
+ * **Onboarding enhancements:**  A/B test different onboarding approaches
 
 **Critical skill:** Rigorous causal inference prevents false conclusions from observational data. Essential for measuring ROI of workforce programs.
 
@@ -271,119 +274,121 @@ Focus: Measure causal impact of interventions using advanced statistical methods
 ### Programming & Analysis
 
 * **Python:** pandas, numpy, scikit-learn, statsmodels, matplotlib, seaborn
+  
 * **SQL:** Complex joins, window functions, CTEs, aggregation patterns
 
 ### Statistical Methods
 
-* **Time Series:** Prophet, ARIMA, seasonal decomposition, autocorrelation analysis
+* **Time Series:**  Prophet, ARIMA, seasonal decomposition, autocorrelation analysis
   
-* **Causal Inference:** Propensity scores, IPW, matching, uplift modeling
+* **Causal Inference:**  Propensity scores, IPW, matching, uplift modeling
   
-* **Machine Learning:** Clustering, classification, cross-validation, hyperparameter tuning
+* **Machine Learning:**  Clustering, classification, cross-validation, hyperparameter tuning
   
-* **Experimentation:** A/B testing, bootstrap CIs, multiple comparison corrections
+* **Experimentation:**  A/B testing, bootstrap CIs, multiple comparison corrections
 
 ### Data Engineering
 
-* **Scale:** 3M+ transactions, 200K+ users, 50K+ products
+* **Scale:**  3M+ transactions, 200K+ users, 50K+ products
   
-* **SQL Optimization:** Efficient joins, indexing strategies, query performance
+* **SQL Optimization:**  Efficient joins, indexing strategies, query performance
   
-* **Pipeline Design:** Reproducible workflows, modular code, artifact management
+* **Pipeline Design:**  Reproducible workflows, modular code, artifact management
 
 ### Business Communication
 
-* **Documentation:** Clear project structure, markdown explanations, reproducible code
+* **Documentation:**  Clear project structure, markdown explanations, reproducible code
   
 * **Storytelling:**  Business context for every analysis, actionable insights
   
-* **Visualization:** Matplotlib, Seaborn for exploratory and presentation graphics
+* **Visualization:**  Matplotlib, Seaborn for exploratory and presentation graphics
 
 
 ## Key Insights for Workforce Management
 
 ### 1. Early Engagement is Disproportionately Important
 
-* **Finding:** 35% of customers don't return after first order; those who return in Week 1 have 3x higher lifetime value.
+* **Finding:**  35% of customers don't return after first order; those who return in Week 1 have 3x higher lifetime value.
   
-* **Workforce Implication:** First 90 days are highest attrition risk. Targeted onboarding and early check-ins at critical milestones (30-day, 60-day, 90-day) significantly improve retention.
+* **Workforce Implication:**  First 90 days are highest attrition risk. Targeted onboarding and early check-ins at critical milestones (30-day, 60-day, 90-day) significantly improve retention.
   
 * **Action:**  Build structured onboarding with milestone checkpoints; allocate manager time to early-tenure employees.
 
 
 ### 2. Segmentation Enables Precision
 
-* **Finding:** Heavy re-orderers vs. one-time buyers require fundamentally different strategies.
+* **Finding:**  Heavy re-orderers vs. one-time buyers require fundamentally different strategies.
   
-* **Workforce Implication:** High engagement vs. low engagement employees need tailored retention approaches. Risk-scoring enables efficient resource allocation.
+* **Workforce Implication:**  High engagement vs. low engagement employees need tailored retention approaches. Risk-scoring enables efficient resource allocation.
   
-* **Action:** Segment employees by engagement/performance; target retention budget to high-risk, high-value segments.
+* **Action:**  Segment employees by engagement/performance; target retention budget to high-risk, high-value segments.
 
 ### 3. Forecasting Informs Capacity Planning
 
-* **Finding:** Weekly demand patterns enable 4-8 week ahead planning.
+* **Finding:**  Weekly demand patterns enable 4-8 week ahead planning.
   
-* **Workforce Implication:** Predicting attrition 3-6 months ahead maintains service levels through proactive hiring.
+* **Workforce Implication:**  Predicting attrition 3-6 months ahead maintains service levels through proactive hiring.
   
-* **Action:** Build attrition forecasts into headcount models; hire ahead of predicted gaps.
+* **Action:**  Build attrition forecasts into headcount models; hire ahead of predicted gaps.
 
 ### 4. Causal Methods Validate Interventions
 
-* **Finding:** Propensity scoring isolates true promotional impact (+0.7% reorder uplift).
+* **Finding:**  Propensity scoring isolates true promotional impact (+0.7% reorder uplift).
   
-* **Workforce Implication:** Rigorous testing determines whether retention programs actually work (not just correlation).
+* **Workforce Implication:**  Rigorous testing determines whether retention programs actually work (not just correlation).
   
-* **Action:** Run A/B tests on retention bonuses, training programs, schedule flexibility; measure ROI scientifically.
+* **Action:**  Run A/B tests on retention bonuses, training programs, schedule flexibility; measure ROI scientifically.
 
 
 ## Tools & Technologies
 
-* **Languages:** Python, SQL
+* **Languages:**  Python, SQL
   
-* **Libraries:** pandas, numpy, scikit-learn, statsmodels, Prophet, causalml, matplotlib, seaborn
+* **Libraries:**  pandas, numpy, scikit-learn, statsmodels, Prophet, causalml, matplotlib, seaborn
   
-* **Methods:** Time series forecasting, causal inference, cohort analysis, funnel analytics, machine learning
+* **Methods:**  Time series forecasting, causal inference, cohort analysis, funnel analytics, machine learning
   
-* **Scale:** 3M+ transaction records, 200K+ users, 50K+ products
+* **Scale:**  3M+ transaction records, 200K+ users, 50K+ products
   
-* **Environment:** Jupyter Notebooks, Git version control
+* **Environment:**  Jupyter Notebooks, Git version control
 
 
 ## Business Value Summary
 
- * **Retention:** Identified critical engagement windows (Week 1 = 35% opportunity)
+ * **Retention:**  Identified critical engagement windows (Week 1 = 35% opportunity)
    
- * **Forecasting:** Enabled 4-8 week ahead demand planning with statistical confidence
+ * **Forecasting:**  Enabled 4-8 week ahead demand planning with statistical confidence
    
- * **Experimentation:** Validated 0.7% uplift with rigorous causal inference
+ * **Experimentation:**  Validated 0.7% uplift with rigorous causal inference
    
- * **Scalability:** SQL-based infrastructure supports ongoing operational monitoring
+ * **Scalability:**  SQL-based infrastructure supports ongoing operational monitoring
    
- * **Segmentation:** Actionable customer groups enable targeted interventions
+ * **Segmentation:**  Actionable customer groups enable targeted interventions
 
 
 ## Future Enhancements
 
- * **Dashboard:** Tableau/Power BI for real-time segment tracking and KPI monitoring
+ * **Dashboard:**  Tableau/Power BI for real-time segment tracking and KPI monitoring
    
- * **Deep Learning:** LSTM networks for demand forecasting (capture complex patterns)
+ * **Deep Learning:**  LSTM networks for demand forecasting (capture complex patterns)
    
- * **Bayesian A/B Testing:** Continuous experimentation framework with Bayesian inference
+ * **Bayesian A/B Testing:**  Continuous experimentation framework with Bayesian inference
    
- * **Survival Analysis:** Time-to-churn modeling with Cox proportional hazards
+ * **Survival Analysis:**  Time-to-churn modeling with Cox proportional hazards
    
- * **Recommendation Engine:** Collaborative filtering for product cross-sell
+ * **Recommendation Engine:**  Collaborative filtering for product cross-sell
 
 
 ## Project Context
 
- * **Type:** Personal project demonstrating production-level analytical capabilities
+ * **Type:**  Personal project demonstrating production-level analytical capabilities
    
- * **Scope:** End-to-end analysis from raw data to actionable insights
+ * **Scope:**  End-to-end analysis from raw data to actionable insights
    
- * **Audience:** Workforce Management teams, Operations Planning, Data Science stakeholders
+ * **Audience:**  Workforce Management teams, Operations Planning, Data Science stakeholders
    
- * **Goal:** Showcase transferable skills for operational analytics and workforce planning roles
+ * **Goal:**  Showcase transferable skills for operational analytics and workforce planning roles
+
 
 ## About This Work
 This project demonstrates that strong analytical fundamentals transfer across business domains. The methods used here—retention analysis, forecasting, causal inference—are the same ones workforce management teams use to:
