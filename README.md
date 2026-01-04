@@ -379,7 +379,7 @@ Focus: Measure causal impact of interventions using advanced statistical methods
  * **Recommendation Engine:** Collaborative filtering for product cross-sell
 
 
-##Project Context
+## Project Context
 
  * **Type:** Personal project demonstrating production-level analytical capabilities
    
@@ -389,7 +389,7 @@ Focus: Measure causal impact of interventions using advanced statistical methods
    
  * **Goal:** Showcase transferable skills for operational analytics and workforce planning roles
 
-##About This Work
+## About This Work
 This project demonstrates that strong analytical fundamentals transfer across business domains. The methods used here—retention analysis, forecasting, causal inference—are the same ones workforce management teams use to:
 
  * Predict and prevent employee attrition
