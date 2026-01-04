@@ -7,7 +7,7 @@ This project demonstrates analytical capabilities directly applicable to workfor
 
   **1. Retention & Attrition Forecasting**
  
-    **Workforce Parallel:**  Just as customers churn, employees attrit—forecasting methods apply to both domains.
+   **Workforce Parallel:**  Just as customers churn, employees attrit—forecasting methods apply to both domains.
  
    **What I Did:**
      * Built retention funnels tracking user progression through order milestones (1→2→3→6+ orders)
