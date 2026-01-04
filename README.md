@@ -155,7 +155,7 @@ Focus: User retention through order progression (SQL-based behavioral analytics)
 
 **Critical finding:** Early engagement predicts long term retention—same pattern in both customer and employee lifecycles.
 
-## 04_Forecasting_Prophet_ARIMA.ipynb
+### 04_Forecasting_Prophet_ARIMA.ipynb
 Focus: Predict weekly demand to support capacity planning and inventory management
 
 **Models Evaluated:**
